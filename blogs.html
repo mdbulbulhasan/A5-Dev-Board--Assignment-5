@@ -13,6 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Tailwind CSS CDN -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/845571ee6d.js" crossorigin="anonymous"></script>
     <!-- Google Fonts CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,10 +41,17 @@
             >
           </div>
           <div class="navbar-end gap-5">
+
             <button id="backButton"
-              class="bg-[rgb(55,82,253)] text-white p-4 rounded-xl cursor-pointer"
+              class="lg:flex hidden bg-[rgb(55,82,253)] text-white p-4 rounded-xl cursor-pointer"
             >
+            
               Back to Desk
+            </button>
+            <button id="mobile-BackButton"
+              class="lg:hidden flex bg-[rgb(55,82,253)] text-white p-4 rounded-xl cursor-pointer"
+            >
+            <i class="fa-solid fa-arrow-left"></i>
             </button>
           </div>
         </div>

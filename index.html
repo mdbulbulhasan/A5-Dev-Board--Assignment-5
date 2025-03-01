@@ -40,10 +40,10 @@
           </div>
           <div class="navbar-end gap-5">
             <div
-              class="flex gap-3 bg-[rgb(244,247,255)] px-4 py-2 rounded-r-full rounded-l-full"
+              class="lg:flex hidden gap-3 bg-[rgb(244,247,255)] px-4 py-2 rounded-r-full rounded-l-full"
             >
               <img src="./assets/checkbox.png" alt="" />
-              <p class="text-2xl font-bold">23</p>
+              <p id="checkList" class="text-2xl font-bold">23</p>
             </div>
             <button
               id="bg-change-btn"
@@ -58,11 +58,11 @@
     <!-- Navbar Section -->
 
     <!-- Main Section -->
-    <section class="w-5/6 mx-auto mt-4 flex gap-5">
+    <section class="w-5/6 mx-auto mt-4 lg:flex lg:flex-row flex-col gap-5">
       <!-- Overall Content -->
-      <div class="left bg-[rgb(255,255,255)] w-[80%] rounded-xl px-8">
+      <div class="left bg-[rgb(255,255,255)] lg:w-[80%] w-full rounded-xl px-8 lg:pt-0 pt-2">
         <div class="top mt-6">
-          <div class="grid grid-cols-4 gap-3">
+          <div class="grid lg:grid-cols-4 grid-cols-1 gap-3">
             <div
               class="flex gap-4 justify-center items-center col-span-1 bg-[rgb(244,247,255)] rounded-xl h-30 px-2"
             >
@@ -70,8 +70,8 @@
                 <img src="./assets/checkbox.png" alt="" />
               </div>
               <div>
-                <h2>Task Assigned </h2>
-                <p>05</p>
+                <h2>Task Assigned</h2>
+                <p id="taskAssigned">6</p>
               </div>
             </div>
             <div
@@ -90,28 +90,28 @@
               </button>
             </div>
             <div
-              class="flex gap-4 justify-center items-center col-span-1 bg-[rgb(244,247,255)] rounded-xl px-2"
+              class="flex gap-4 justify-center items-center col-span-1 bg-[rgb(244,247,255)] rounded-xl lg:pt-0 py-3 px-2"
             >
               <img
                 class="bg-[rgb(255,255,255)] p-4 rounded-full"
                 src="./assets/calender.png"
                 alt=""
               />
-              <p>
+              <p id="todayDate">
                 Wed, <br />
-                <span> Jul 28 2025 </span>
+                Jul 28 2025
               </p>
             </div>
           </div>
         </div>
-        <div class="bottom my-5 grid grid-cols-3 gap-4">
+        <div class="bottom my-5 grid lg:grid-cols-3 grid-cols-1 gap-4">
           <div class="card-1 bg-[rgb(244,247,255)] p-5 space-y-4 rounded-2xl">
             <div class="space-y-2">
               <p class="bg-[rgb(255,255,255)] w-fit px-5 py-1 rounded-xl">
                 ShopEase
               </p>
-              <h1 class="text-2xl font-semibold">Fix Mobile Button Issue</h1>
-              <p class="w-full">
+              <h1 id="task-1" class="text-xl font-semibold">Fix Mobile Button Issue</h1>
+              <p class="w-3/4">
                 Debug using Chrome DevTools, check for overlapping elements,
                 ...<span class="hidden">
                   and ensure onClick works properly and ensure onClick works
@@ -127,8 +127,8 @@
                 </h3>
               </div>
               <div>
-                <button
-                  class="bg-[rgb(55,82,253)] text-white p-4 rounded-xl cursor-pointer"
+                <button id="btn-card-1"
+                  class="button bg-[rgb(55,82,253)] text-white p-4 rounded-xl cursor-pointer"
                 >
                   Completed
                 </button>
@@ -140,9 +140,9 @@
               <p class="bg-[rgb(255,255,255)] w-fit px-5 py-1 rounded-xl">
                 CloudSync
               </p>
-              <h1 class="text-2xl font-semibold">Add Dark Mode</h1>
-              <p class="w-full">
-                Store the user's preference in localStorage, update CSS ...
+              <h1 id="task-2" class="text-xl font-semibold">Add Dark Mode</h1>
+              <p class="w-3/4">
+                Store the user's preference in localStorage, <br> update CSS ...
                 <span class="hidden"
                   >variables dynamically, and apply a smooth transition
                   effect.</span
@@ -157,8 +157,8 @@
                 </h3>
               </div>
               <div>
-                <button
-                  class="bg-[rgb(55,82,253)] text-white p-4 rounded-xl cursor-pointer"
+                <button id="btn-card-2"
+                  class="button bg-[rgb(55,82,253)] text-white p-4 rounded-xl cursor-pointer"
                 >
                   Completed
                 </button>
@@ -170,8 +170,8 @@
               <p class="bg-[rgb(255,255,255)] w-fit px-5 py-1 rounded-xl">
                 SwiftPay
               </p>
-              <h1 class="text-2xl font-semibold">Optimize Home page </h1>
-              <p class="w-full">
+              <h1 id="task-3" class="text-xl font-semibold">Optimize Home page </h1>
+              <p class="w-3/4">
                 Debug using Chrome DevTools, <br />check for overlapping ...
                 <span class="hidden"
                   >elements, and ensure onClick works properly and ensure
@@ -187,7 +187,7 @@
                 </h3>
               </div>
               <div>
-                <button
+                <button id="btn-card-3"
                   class="bg-[rgb(55,82,253)] text-white p-4 rounded-xl cursor-pointer"
                 >
                   Completed
@@ -200,8 +200,8 @@
               <p class="bg-[rgb(255,255,255)] w-fit px-5 py-1 rounded-xl">
                 Meta
               </p>
-              <h1 class="text-2xl font-semibold">Add new emoji 🤲</h1>
-              <p class="w-full">
+              <h1 id="task-4" class="text-xl font-semibold">Add new emoji 🤲</h1>
+              <p class="w-3/4">
                 Debug using Chrome DevTools, <br />check for overlapping ...
                 <span class="hidden"
                   >elements, and ensure onClick works properly and ensure
@@ -217,7 +217,7 @@
                 </h3>
               </div>
               <div>
-                <button
+                <button id="btn-card-4"
                   class="bg-[rgb(55,82,253)] text-white p-4 rounded-xl cursor-pointer"
                 >
                   Completed
@@ -230,8 +230,8 @@
               <p class="bg-[rgb(255,255,255)] w-fit px-5 py-1 rounded-xl">
                 Google LLC
               </p>
-              <h1 class="text-2xl font-semibold">Integrate OpenAI API</h1>
-              <p class="w-full">
+              <h1 id="task-5" class="text-xl font-semibold">Integrate OpenAI API</h1>
+              <p class="w-3/4">
                 Debug using Chrome DevTools, <br />check for overlapping ...
                 <span class="hidden"
                   >elements, and ensure onClick works properly and ensure
@@ -247,7 +247,7 @@
                 </h3>
               </div>
               <div>
-                <button
+                <button id="btn-card-5"
                   class="bg-[rgb(55,82,253)] text-white p-4 rounded-xl cursor-pointer"
                 >
                   Completed
@@ -260,8 +260,8 @@
               <p class="bg-[rgb(255,255,255)] w-fit px-5 py-1 rounded-xl">
                 Glassdoar
               </p>
-              <h1 class="text-2xl font-semibold">Improve Job searching</h1>
-              <p class="w-full">
+              <h1 id="task-6" class="text-xl font-semibold">Improve Job searching</h1>
+              <p class="w-3/4">
                 Debug using Chrome DevTools, <br />check for overlapping ...
                 <span class="hidden"
                   >elements, and ensure onClick works properly and ensure
@@ -277,7 +277,7 @@
                 </h3>
               </div>
               <div>
-                <button
+                <button id="btn-card-6"
                   class="bg-[rgb(55,82,253)] text-white p-4 rounded-xl cursor-pointer"
                 >
                   Completed
@@ -287,17 +287,12 @@
           </div>
         </div>
       </div>
-      <div class="right bg-[rgb(255,255,255)] w-[25%] rounded-xl px-4">
+      <div id="acttivityLog" class="right bg-[rgb(255,255,255)] lg:w-[25%] w-full rounded-xl lg:pt-0 pt-2 px-4">
         <div class="flex justify-center gap-3 my-3 border-b border-dashed pb-4">
           <img src="./assets/activity.png" alt="" />
           <h1 class="text-[rgb(0,48,60)] text-xl font-medium">Activity Log</h1>
         </div>
-        <h1 class="bg-[rgb(244,247,255)] p-4 rounded-2xl mb-4">
-          You have Complete The Task Add Dark Mode at <span>12:48:15 PM</span>
-        </h1>
-        <h1 class="bg-[rgb(244,247,255)] p-4 rounded-2xl">
-          You have Complete The Task Add Dark Mode at <span>12:48:15 PM</span>
-        </h1>
+        
       </div>
       <!--Overall Content -->
     </section>
@@ -305,5 +300,6 @@
 
     <!-- Link JavaScript file -->
     <script src="./JS/index.js"></script>
+    <script src="./JS/taskList.js"></script>
   </body>
 </html>
