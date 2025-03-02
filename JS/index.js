@@ -8,14 +8,14 @@ document
 // Route index.html to blogs.html
 // Full document background color Change Feature
 const rainbowColors = [
-  "rgba(255,0,0,0.8)",
-  "rgba(255,144,255,0.8)",
-  "rgba(255,255,98,0.8)",
-  "rgba(0,255,0,0.8)",
-  "rgba(0,140,255,0.8)",
-  "rgba(251,55,0,0.8)",
-  "rgba(87,255,255,0.8)",
-  "rgba(244,247,255,0.8)"
+  "rgba(255,0,0,0.2)",
+  "rgba(255,144,255,0.3)",
+  "rgba(255,255,98,0.3)",
+  "rgba(0,255,0,0.2)",
+  "rgba(0,140,255,0.3)",
+  "rgba(251,55,0,0.3)",
+  "rgba(87,255,255,0.2)",
+  "rgba(244,247,255,1)"
 ];
 let colorIndex = 0;
 document.getElementById("bg-change-btn").addEventListener("click", function () {
